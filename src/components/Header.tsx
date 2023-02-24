@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <img src="../../public/icons_assets/Logo.svg" alt="Restaurant logo" />
+        <img src={process.env.PUBLIC_URL +"icons_assets/logo.svg"} alt="Restaurant logo" />
         <ul>
           {navigationData.map(({ href, title }) => (
             <li key={title}>
